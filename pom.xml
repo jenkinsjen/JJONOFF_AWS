@@ -1,28 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  ...
-  <profiles>
-    <profile>
-      <id>test</id>
-      <activation>
-        <activeByDefault>false</activeByDefault>
-        <jdk>1.5</jdk>
-        <os>
-          <name>Windows XP</name>
-          <family>Windows</family>
-          <arch>x86</arch>
-          <version>5.1.2600</version>
-        </os>
-        <property>
-          <name>sparrow-type</name>
-          <value>African</value>
-        </property>
-        <file>
-          <exists>${basedir}/file2.properties</exists>
-          <missing>${basedir}/file1.properties</missing>
-        </file>
-      </activation>
-      ...
-    </profile>
-  </profiles>
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>org.codehaus.mojo</groupId>
+  <artifactId>my-project</artifactId>
+  <version>1.0</version>
 </project>
