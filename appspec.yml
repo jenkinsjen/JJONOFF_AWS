@@ -1,10 +1,15 @@
-version: 0.0
-os: windows
-files:
-  - source: .
-    destination: c:\inetpub\wwwroot\
+version: 0.2
 
-hooks:
-  BeforeInstall:
-    - location: \before-install.bat
-      timeout: 900
+env:
+  variables:
+    PROJECT: TEST_AWS
+    DOTNET_FRAMEWORK: 4.6.1
+phases:
+  build:
+    commands:
+      - nuget restore
+      - msbuild $env:PROJECT.csproj /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /p:DeployIisAppPath="Default Web Site" /p:PackageAsSingleFile=false /p:OutDir=C:\codebuild\artifacts\ /t:Package
+artifacts:
+  files:
+   - source: .
+    destination: c:\inetpub\wwwroot\
