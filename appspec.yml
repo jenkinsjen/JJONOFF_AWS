@@ -12,4 +12,4 @@ phases:
 artifacts:
   files:
    - source: .
-    destination: c:\inetpub\wwwroot\
+    destination: 'c:\inetpub\wwwroot\'
