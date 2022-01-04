@@ -1,4 +1,4 @@
-set FOLDER=%HOMEDRIVE%\temp\CodeDeployExample
+set FOLDER=%HOMEDRIVE%\inetpub\wwwroot
 
 if exist %FOLDER% (
   rd /s /q "%FOLDER%"
