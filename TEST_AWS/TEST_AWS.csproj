@@ -224,6 +224,10 @@
     </None>
   </ItemGroup>
   <PropertyGroup>
+	<MSBuildExtensionsPath>C:\ProgramFiles (x86)\Micrsoft Visual Studio\2017\BuildTools\MSBuild</MSBuildExtensionsPath>
+
+	<!-- It works too with relative path -->
+	<!--<MSBuildExtensionsPath>..\msbuild</MSBuildExtensionsPath>-->
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
