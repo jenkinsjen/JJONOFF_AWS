@@ -2,7 +2,7 @@
 artifacts: 
   base-directory: "C:\\inetpub\\wwwroot\\"
   files: 
-    - appspec.yaml
+    - appspec.yml
     - "**/*"
 env: 
   variables: 
