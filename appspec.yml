@@ -1,6 +1,6 @@
 --- 
 artifacts: 
-  base-directory: "c:\\inetpub\\wwwroot\\"
+  base-directory: "C:\\inetpub\\wwwroot\\"
   files: 
     - "**/*"
 env: 
@@ -11,5 +11,5 @@ phases:
   build: 
     commands: 
       - "nuget restore"
-      - "msbuild $env:PROJECT.csproj /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /p:DeployIisAppPath=\"Default Web Site\" /p:PackageAsSingleFile=false /p:OutDir=c:\\inetpub\\wwwroot\\ /t:Package"
-version: 0.0
+      - "msbuild $env:PROJECT.csproj /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Debug /p:DeployIisAppPath=\"Default Web Site\" /p:PackageAsSingleFile=false /p:OutDir=C:\\inetpub\\wwwroot\\ /t:Package"
+version: 0.2
