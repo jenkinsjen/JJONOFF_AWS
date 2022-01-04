@@ -1,15 +1,12 @@
 --- 
-artifacts: 
-  base-directory: "C:\\inetpub\\wwwroot\\"
-  files: 
-    - "**/*"
-env: 
-  variables: 
-    DOTNET_FRAMEWORK: "4.6.1"
-    PROJECT: TEST_AWS
-phases: 
-  build: 
-    commands: 
-      - "nuget restore"
-      - "msbuild $env:PROJECT.csproj /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Debug /p:DeployIisAppPath=\"Default Web Site\" /p:PackageAsSingleFile=false /p:OutDir=C:\\inetpub\\wwwroot\\"
-version: 0.2
+files: 
+  - 
+    destination: "c:\\inetpub\\wwwroot\\"
+    source: "."
+hooks: 
+  BeforeInstall: 
+    - 
+      location: \before-install.bat
+      timeout: 900
+os: windows
+version: 0.0
