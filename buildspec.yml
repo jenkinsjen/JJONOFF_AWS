@@ -5,6 +5,11 @@ artifacts:
     - TEST_AWS/Content/**/*
     - TEST_AWS/fonts/**/*
     - TEST_AWS/Scripts/**/*
+    - TEST_AWS/*.aspx
+    - TEST_AWS/*.master
+    - TEST_AWS/*.xml
+    - TEST_AWS/*.ascx
+    - TEST_AWS/*.ico
     - appspec.yml
 env: 
   variables: 
