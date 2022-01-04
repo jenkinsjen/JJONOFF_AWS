@@ -1,9 +1,7 @@
 --- 
 artifacts: 
-  base-directory: "C:\\inetpub\\wwwroot\\"
   files: 
     - TEST_AWS/**/*
-    - scripts/**/*
     - appspec.yml
 env: 
   variables: 
