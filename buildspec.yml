@@ -1,4 +1,13 @@
 --- 
+env: 
+  variables: 
+    DOTNET_FRAMEWORK: "4.6.1"
+    PROJECT: TEST_AWS
+phases: 
+  build: 
+    commands: 
+      - "nuget restore"
+      - "msbuild $env:PROJECT.csproj /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /p:DeployIisAppPath=\"Default Web Site\" /p:PackageAsSingleFile=false /p:OutDir=C:\\inetpub\\wwwroot\\"
 artifacts: 
   files: 
     - TEST_AWS/**/*
@@ -11,13 +20,4 @@ artifacts:
     #- TEST_AWS/*.ascx
     #- TEST_AWS/*.ico
     #- appspec.yml
-env: 
-  variables: 
-    DOTNET_FRAMEWORK: "4.6.1"
-    PROJECT: TEST_AWS
-phases: 
-  build: 
-    commands: 
-      - "nuget restore"
-      - "msbuild $env:PROJECT.csproj /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /p:DeployIisAppPath=\"Default Web Site\" /p:PackageAsSingleFile=false /p:OutDir=C:\\inetpub\\wwwroot\\"
 version: 0.2
