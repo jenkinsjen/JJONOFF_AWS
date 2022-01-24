@@ -106,48 +106,48 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="bin\Antlr3.Runtime.dll">
+    <Compile Include="bin\Antlr3.Runtime.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Antlr3.Runtime.pdb">
+    </Compile>
+    <Compile Include="bin\Antlr3.Runtime.pdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\AspNet.ScriptManager.bootstrap.dll">
+    </Compile>
+    <Compile Include="bin\AspNet.ScriptManager.bootstrap.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\AspNet.ScriptManager.jQuery.dll">
+    </Compile>
+    <Compile Include="bin\AspNet.ScriptManager.jQuery.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.dll">
+    </Compile>
+    <Compile Include="bin\Microsoft.AspNet.FriendlyUrls.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.xml">
+    </Compile>
+    <Compile Include="bin\Microsoft.AspNet.FriendlyUrls.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll">
+    </Compile>
+    <Compile Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+    </Compile>
+    <Compile Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml">
+    </Compile>
+    <Compile Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Microsoft.ScriptManager.MSAjax.dll">
+    </Compile>
+    <Compile Include="bin\Microsoft.ScriptManager.MSAjax.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Microsoft.ScriptManager.WebForms.dll">
+    </Compile>
+    <Compile Include="bin\Microsoft.ScriptManager.WebForms.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Microsoft.Web.Infrastructure.dll">
+    </Compile>
+    <Compile Include="bin\Microsoft.Web.Infrastructure.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Newtonsoft.Json.dll">
+    </Compile>
+    <Compile Include="bin\Newtonsoft.Json.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Newtonsoft.Json.xml">
+    </Compile>
+    <Compile Include="bin\Newtonsoft.Json.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </Compile>
     <Content Include="bin\roslyn\csc.exe" />
     <Content Include="bin\roslyn\csi.exe" />
     <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
@@ -187,21 +187,21 @@
     <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
-    <Content Include="bin\System.Web.Optimization.dll">
+    <Compile Include="bin\System.Web.Optimization.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\System.Web.Optimization.xml">
+    </Compile>
+    <Compile Include="bin\System.Web.Optimization.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\TEST_AWS.dll">
+    </Compile>
+    <Compile Include="bin\TEST_AWS.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\TEST_AWS.pdb">
+    </Compile>
+    <Compile Include="bin\TEST_AWS.pdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\WebGrease.dll">
+    </Compile>
+    <Compile Include="bin\WebGrease.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </Compile>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
