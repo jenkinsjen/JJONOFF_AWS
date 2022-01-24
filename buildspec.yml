@@ -1,16 +1,4 @@
 --- 
-artifacts: 
-  files: 
-    - TEST_AWS/**/*
-    #- TEST_AWS/Content/**/*
-    #- TEST_AWS/fonts/**/*
-    #- TEST_AWS/Scripts/**/*
-    #- TEST_AWS/*.aspx
-    #- TEST_AWS/*.master
-    #- TEST_AWS/*.xml
-    #- TEST_AWS/*.ascx
-    #- TEST_AWS/*.ico
-    #- appspec.yml
 env: 
   variables: 
     DOTNET_FRAMEWORK: "4.6.1"
@@ -19,5 +7,17 @@ phases:
   build: 
     commands: 
       - "nuget restore"
-      - "msbuild $env:PROJECT.csproj /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /p:DeployIisAppPath=\"Default Web Site\" /p:PackageAsSingleFile=false /p:OutDir=C:\\inetpub\\wwwroot\\"
+      - "msbuild $env:PROJECT.sln /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Debug /p:DeployIisAppPath=\"Default Web Site\" /p:PackageAsSingleFile=false /p:OutDir=C:\\inetpub\\wwwroot\\"
+artifacts: 
+  files: 
+    - TEST_AWS/**/*
+    - TEST_AWS/bin/*
+    #- TEST_AWS/fonts/**/*
+    #- TEST_AWS/Scripts/**/*
+    #- TEST_AWS/*.aspx
+    #- TEST_AWS/*.master
+    #- TEST_AWS/*.xml
+    #- TEST_AWS/*.ascx
+    #- TEST_AWS/*.ico
+    #- appspec.yml
 version: 0.2
