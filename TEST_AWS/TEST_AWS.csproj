@@ -113,16 +113,12 @@
     <Content Include="bin\Microsoft.AspNet.FriendlyUrls.dll" />
     <Content Include="bin\Microsoft.AspNet.FriendlyUrls.xml" />
     <Content Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
-    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
     <Content Include="bin\Microsoft.ScriptManager.MSAjax.dll" />
     <Content Include="bin\Microsoft.ScriptManager.WebForms.dll" />
     <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="bin\Newtonsoft.Json.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="bin\Newtonsoft.Json.dll" />
     <Content Include="bin\Newtonsoft.Json.xml" />
     <Content Include="bin\roslyn\csc.exe" />
     <Content Include="bin\roslyn\csi.exe" />
@@ -165,9 +161,7 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="bin\System.Web.Optimization.dll" />
     <Content Include="bin\System.Web.Optimization.xml" />
-    <Content Include="bin\TEST_AWS.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="bin\TEST_AWS.dll" />
     <Content Include="bin\TEST_AWS.pdb" />
     <Content Include="bin\WebGrease.dll" />
     <Content Include="Contact.aspx" />
