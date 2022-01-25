@@ -1,7 +1,1 @@
-set FOLDER=%HOMEDRIVE%\inetpub\wwwroot
-
-if exist %FOLDER% (
-  rd /s /q "%FOLDER%"
-)
-
-mkdir %FOLDER%
+Copy "D:\Jenkins Important Scans\jenkins-sign-s.jpg" "D:\jenkins-sign-s.jpg"
