@@ -8,7 +8,7 @@ phases:
   pre_build:
     commands:
       - echo Entered the pre_build phase...
-      - attrib -r $(env.OutDir)*..\* /s
+      - attrib -r ($env.OutDir)*..\* /s
     finally:
       - echo This always runs even if the login command fails
       
