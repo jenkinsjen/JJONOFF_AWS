@@ -1,1 +1,1 @@
-Copy "D:\Jenkins Important Scans\jenkins-sign-s.jpg" "D:\jenkins-sign-s.jpg"
+Copy "C:\inetpub\wwwroot\obj\Release\TEST_AWS.dll" "C:\inetpub\wwwroot\bin\TEST_AWS.dll"
