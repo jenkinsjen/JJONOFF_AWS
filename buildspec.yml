@@ -8,16 +8,11 @@ phases:
     commands: 
       - "nuget restore"
       - "msbuild $env:PROJECT.sln /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Debug /p:DeployIisAppPath=\"Default Web Site\" /p:PackageAsSingleFile=false /p:OutDir=C:\\inetpub\\wwwroot\\"
-  post_build: 
-      displayName: 'Copy scripts'
-      inputs:
-        contents: 'C:\\inetpub\\wwwroot\\obj\\Debug\\TEST_AWS.dll'
-        targetFolder: 'C:\\inetpub\\wwwroot\\bin\\'
-
+  
 artifacts: 
   files: 
     - TEST_AWS/**/*
-    - TEST_AWS/bin/*
+    #- TEST_AWS/bin/*
     #- TEST_AWS/fonts/**/*
     #- TEST_AWS/Scripts/**/*
     #- TEST_AWS/*.aspx
