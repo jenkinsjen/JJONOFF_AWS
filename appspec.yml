@@ -4,12 +4,12 @@ files:
   - source: .
     destination: C:\inetpub\wwwroot
 hooks:
-  BeforeInstall:
-    - location: .\scripts\before-install.bat
-      timeout: 900
-  #AfterInstall:
-  #  - location: .\scripts\after-install.bat     
+  #BeforeInstall:
+  #  - location: .\scripts\before-install.bat
   #    timeout: 900
+  AfterInstall:
+    - location: .\scripts\before-install.bat     
+      timeout: 900
  # ApplicationStart:
    # - location: .\scripts\application-start.bat  
   #    timeout: 900
