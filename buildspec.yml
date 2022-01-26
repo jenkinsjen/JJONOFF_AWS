@@ -14,15 +14,5 @@ phases:
 artifacts: 
   files: 
     files:
-    #- ./TEST_AWS/bin/Debug/*
     - TEST_AWS/**/*
-    #- TEST_AWS/bin/*
-    #- TEST_AWS/fonts/**/*
-    #- TEST_AWS/Scripts/**/*
-    #- TEST_AWS/*.aspx
-    #- TEST_AWS/*.master
-    #- TEST_AWS/*.xml
-    #- TEST_AWS/*.ascx
-    #- TEST_AWS/*.ico
-    #- appspec.yml
 version: 0.2
