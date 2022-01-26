@@ -5,17 +5,11 @@ env:
     PROJECT: TEST_AWS
     OutDir: C:\\inetpub\\wwwroot\\
 phases: 
-  pre_build:
-    commands:
-      - echo Entered the pre_build phase...
-      - attrib -r ($env.OutDir)*..\* /s
-    finally:
-      - echo This always runs even if the login command fails
-      
+     
   build: 
     commands: 
       - "nuget restore"
-      - "msbuild $env:PROJECT.sln /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /p:DeployIisAppPath=\"Default Web Site\" /p:PackageAsSingleFile=false /p:OutDir=$env:OutDir"
+      - "msbuild $env:PROJECT.sln /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK"
       
 artifacts: 
   files: 
