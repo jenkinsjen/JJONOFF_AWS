@@ -13,7 +13,9 @@ phases:
       
 artifacts: 
   files: 
-    - TEST_AWS/**/*
+    files:
+    - .\TEST_AWS\bin\Debug\*
+    #- TEST_AWS/**/*
     #- TEST_AWS/bin/*
     #- TEST_AWS/fonts/**/*
     #- TEST_AWS/Scripts/**/*
