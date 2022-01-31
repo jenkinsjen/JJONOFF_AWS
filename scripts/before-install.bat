@@ -1,2 +1,2 @@
 echo %PATH%
-Copy "C:\\inetpub\\wwwroot\\obj\\Release\\TEST_AWS.dll" "C:\\inetpub\\wwwroot\\bin\\TEST_AWS.dll"
+Copy "c:\inetpub\wwwroot\obj\Release\TEST_AWS.txt" "c:\inetpub\wwwroot\bin\"
