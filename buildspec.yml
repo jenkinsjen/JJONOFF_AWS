@@ -10,9 +10,7 @@ phases:
     commands: 
       - "nuget restore"
       - msbuild $env:PROJECT.sln /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /p:DeployIisAppPath="Default Web Site" /p:PackageAsSingleFile=false /p:OutDir=C:\codebuild\artifacts\
-      - echo $(TargetDir)
-      - echo $(TargetName)
-      - echo $(SolutionDir)
+      - echo $(ProjectDir)bin\BLAH.Common.xml
   #post_build:
     #commands:
       # - command
