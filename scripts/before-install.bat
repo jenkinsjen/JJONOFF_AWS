@@ -1,1 +1,1 @@
-Copy ".\\obj\\Release\\TEST_AWS.dll" ".\\bin\\TEST_AWS.dll"
+Copy "C:\\inetpub\\wwwroot\\obj\\Release\\TEST_AWS.dll" "C:\\inetpub\\wwwroot\\bin\\TEST_AWS.dll"
