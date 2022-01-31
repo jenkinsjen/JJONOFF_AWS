@@ -8,7 +8,7 @@ hooks:
     - location: .\scripts\before-install.bat
       timeout: 900
   AfterInstall:
-    - location: .\configuration\before-install.bat     
+    - location: .\configuration\after-install.bat     
       timeout: 900
  # ApplicationStart:
    # - location: .\scripts\application-start.bat  
