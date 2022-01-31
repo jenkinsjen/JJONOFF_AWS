@@ -11,7 +11,7 @@ namespace TEST_AWS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            hr.InnerText = "Devops Jenkins Beginner";
+            hr.InnerText = "Devops Jenkins Beginner - Done";
         }
     }
 }
