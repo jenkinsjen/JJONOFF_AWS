@@ -10,9 +10,9 @@ hooks:
   AfterInstall:
     - location: .\configuration\after-install.bat     
       timeout: 900
- # ApplicationStart:
-   # - location: .\scripts\application-start.bat  
-  #    timeout: 900
+ ApplicationStart:
+    - location: .\configuration\application-start.bat  
+      timeout: 900
   #ValidateService:
   #  - location: .\scripts\validate-service.bat    
   #    timeout: 900
