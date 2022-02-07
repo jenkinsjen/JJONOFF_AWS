@@ -4,11 +4,15 @@ env:
     DOTNET_FRAMEWORK: "4.6.1"
     PROJECT: TEST_AWS
     OutDir: C:\\inetpub\\wwwroot\\
+    ENV_TYPE: DEV
 phases: 
      
   build: 
     commands: 
       - "nuget restore"
+      - "set $env.ENV_TYPE = %ENV_TYPE%"
+      - "echo Jenkins echoing env_type"
+      - "echo $env.ENV_TYPE"
       - msbuild $env:PROJECT.sln /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /p:DeployIisAppPath="Default Web Site" /p:PackageAsSingleFile=false /p:OutDir=C:\codebuild\artifacts\
 artifacts:
   files:
