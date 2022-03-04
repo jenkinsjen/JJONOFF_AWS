@@ -9,6 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+install.txt
 
 # Files to be removed (Myself)
 /*.config
